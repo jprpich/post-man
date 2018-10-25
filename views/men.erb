@@ -1,0 +1,10 @@
+<div class="my-div">
+  <a href="/men/new">New Man!</a>
+  <% @men.each do |man|  %>
+    <h1>Hi my name is <%= man[:name] %>!</h1>
+    <h1>I am <%= man[:age] %> years old.</h1>
+    <img src="https://www.getpostman.com/img/v2/logo-glyph.png" alt="post man" height="<%= man[:age] %>" width="<%= man[:age] %>">
+    <h1 class="<%= man[:color] %>">I am of color <%= man[:color] %></h1>
+    <hr>
+  <% end %>
+</div>
